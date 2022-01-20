@@ -28,11 +28,5 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
     
-    - name: Gerando Key
-      run: php artisan key:generate
-
-    - name: Rodando Migrations
-      run: php artisan migrate
-    
     - name: Rodando servidor servidor
       run: php artisan serve
