@@ -28,5 +28,5 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
     
-    - name: Rodando servidor servidor
-      run: php artisan serve
+    - name: Configurando autoload
+      run: composer dump-autoload -o
